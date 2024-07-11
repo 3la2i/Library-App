@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Main.css";
+import "./Home.css";
 
 const initState = {
   books: [

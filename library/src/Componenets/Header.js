@@ -8,10 +8,10 @@ const Header = () => {
         <h1>مرحبا بكم في موقعنا</h1>
         <nav>
             <ul>
-                <li><a href="#home">الصفحة الرئيسية</a></li>
-                <li><a href="#about">حول</a></li>
-                <li><a href="#services">خدمات</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#home">Home </a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
