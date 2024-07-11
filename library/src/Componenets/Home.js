@@ -53,7 +53,7 @@ const initState = {
 
 
 
-const Main = () => {
+const Home = () => {
   const [data, setData] = useState(initState.books);
   return (
     <main>
@@ -70,4 +70,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;

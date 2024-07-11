@@ -9,8 +9,21 @@ const Signup = () => {
     email: "",
     password: "",
   });
-
+  // بيعطي الفاليو الجديدة
   const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // local storageتتخزين البيايانات في
+    localStorage.setItem("username", formData.username);
+    localStorage.setItem("email", formData.email);
+    localStorage.setItem("password", formData.password);
+
+    alert("welcome");
+  };
 
   return (
     <section className="signup-section">
