@@ -1,34 +1,49 @@
+
 footer {
   background-color: #333;
   color: white;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 footer p {
   margin: 0;
+  font-size: 14px;
 }
 
 footer nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 15px 0 0;
   display: flex;
   justify-content: center;
 }
 
 footer nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
+
 footer nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s;
 }
 
 footer nav ul li a:hover {
+  color: #ddd;
   text-decoration: underline;
 }

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Home.css";
+import axios from "axios";
+
+
 
 const initState = {
   books: [
@@ -45,6 +48,54 @@ const initState = {
       author: "الشنفرى",
       isbn: "9283748372",
     },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
+    {
+      id: 7,
+      title: "المعلقات السبع",
+      author: "الشنفرى",
+      isbn: "9283748372",
+    },
   ],
 };
 
@@ -53,21 +104,27 @@ const initState = {
 
 
 
+
+
+
 const Home = () => {
-  const [data, setData] = useState(initState.books);
+  const [data, ] = useState(initState.books);
   return (
     <main>
-      <div className="book-list">
-        {data.map((book) => (
-          <div name={book.id} className="card">
-            <h2>{book.title}</h2>
-            <p>author: {book.author}</p>
-            <p> (ISBN): {book.isbn}</p>
-          </div>
-        ))}
+    <div className="book-list">
+    {data.map((book) => (
+      <div name={book.id} className="card">
+      <h2>{book.title}</h2>
+      <p>author: {book.author}</p>
+      <p> (ISBN): {book.isbn}</p>
       </div>
+    ))}
+    </div>
     </main>
   );
 };
 
 export default Home;
+
+
+// axios.get("https://library-books-76751-default-rtdb.firebaseio.com/books.json")
